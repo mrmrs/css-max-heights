@@ -25,7 +25,7 @@ or download the css on github and include in your project.
 .mxhi-fit {  max-height: fit-content; }
 .mxhi-fill { max-height: fill-available; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .mxhi-none-ns { max-height: none; }
   .mxhi-max-ns {  max-height: max-content; }
   .mxhi-min-ns {  max-height: min-content; }
@@ -33,7 +33,7 @@ or download the css on github and include in your project.
   .mxhi-fill-ns { max-height: fill-available; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .mxhi-none-m { max-height: none; }
   .mxhi-max-m {  max-height: max-content; }
   .mxhi-min-m {  max-height: min-content; }
@@ -41,7 +41,7 @@ or download the css on github and include in your project.
   .mxhi-fill-m { max-height: fill-available; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .mxhi-none-l { max-height: none; }
   .mxhi-max-l {  max-height: max-content; }
   .mxhi-min-l {  max-height: min-content; }
