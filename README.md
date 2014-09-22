@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-max-heights)
 ## File Size
 
 1.0K max-heights.css
-821B max-heights.min.css
+821B max-heights.min.css 
+204B minified and gzipped
 
 ## The Code
 ```
