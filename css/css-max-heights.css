@@ -1,15 +1,30 @@
+/*
+   MAX HEIGHTS - KEY WORDS
+*/
+.mxhi-none { max-height: none; }
+.mxhi-max { max-height: max-content; }
+.mxhi-min { max-height: min-content; }
+.mxhi-fit { max-height: fit-content; }
+.mxhi-fill { max-height: fill-available; }
+@media screen and (min-width: 48em) {
+ .mxhi-none-ns { max-height: none; }
+ .mxhi-max-ns { max-height: max-content; }
+ .mxhi-min-ns { max-height: min-content; }
+ .mxhi-fit-ns { max-height: fit-content; }
+ .mxhi-fill-ns { max-height: fill-available; }
+}
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .mxhi-none-m { max-height: none; }
+ .mxhi-max-m { max-height: max-content; }
+ .mxhi-min-m { max-height: min-content; }
+ .mxhi-fit-m { max-height: fit-content; }
+ .mxhi-fill-m { max-height: fill-available; }
+}
+@media screen and (min-width: 64em) {
+ .mxhi-none-l { max-height: none; }
+ .mxhi-max-l { max-height: max-content; }
+ .mxhi-min-l { max-height: min-content; }
+ .mxhi-fit-l { max-height: fit-content; }
+ .mxhi-fill-l { max-height: fill-available; }
+}
 
-  Postprocess tachyons stylesheets
-
-  Usage
-    $ tachyons <input.css>
-
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
