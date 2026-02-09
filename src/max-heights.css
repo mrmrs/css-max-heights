@@ -8,7 +8,7 @@
 .mxhi-fit {  max-height: fit-content; }
 .mxhi-fill { max-height: fill-available; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .mxhi-none-s { max-height: none; }
   .mxhi-max-s {  max-height: max-content; }
   .mxhi-min-s {  max-height: min-content; }
@@ -16,7 +16,7 @@
   .mxhi-fill-s { max-height: fill-available; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .mxhi-none-m { max-height: none; }
   .mxhi-max-m {  max-height: max-content; }
   .mxhi-min-m {  max-height: min-content; }
@@ -24,7 +24,7 @@
   .mxhi-fill-m { max-height: fill-available; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .mxhi-none-l { max-height: none; }
   .mxhi-max-l {  max-height: max-content; }
   .mxhi-min-l {  max-height: min-content; }
