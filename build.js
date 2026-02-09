@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-max-heights.css');
+const srcFile = path.join(__dirname, 'src', 'max-heights.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-max-heights.css',
+  filename: 'max-heights.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-max-heights.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'max-heights.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-max-heights.css',
+  filename: 'max-heights.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-max-heights.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'max-heights.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-max-heights.css     ${unminified.length} bytes`);
-console.log(`  dist/css-max-heights.min.css ${minified.length} bytes`);
+console.log(`  dist/max-heights.css     ${unminified.length} bytes`);
+console.log(`  dist/max-heights.min.css ${minified.length} bytes`);
