@@ -1,38 +1,44 @@
 {
   "name": "css-max-heights",
-  "style": "max-heights.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-max-heights",
-  "description": "Css module of single purpose classes for max heights",
+  "version": "2.0.0",
+  "description": "Functional CSS for max-heights",
+  "style": "dist/max-heights.css",
+  "main": "dist/max-heights.css",
+  "exports": {
+    ".": "./dist/max-heights.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "max-heights"
+    "max-heights",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-max-heights": {
+  "homepage": "https://github.com/mrmrs/css-max-heights",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-max-heights.git"
+    "url": "https://github.com/mrmrs/css-max-heights.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-max-heights/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-max-heights/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
